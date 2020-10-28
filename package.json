@@ -2,7 +2,7 @@
   "name": "react-pizza",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dinrol.github.io/react-pizza-market",
+  "homepage": "https://Dinrol.github.io/react-pizza-market",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -20,13 +20,13 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "server": "npx json-server --watch src/db.json --port=3001",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "server": "npx json-server --watch src/db.json --port=3001"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-pizza-market/static/css/main.44040635.chunk.css",
+    "main.js": "/react-pizza-market/static/js/main.11107477.chunk.js",
+    "main.js.map": "/react-pizza-market/static/js/main.11107477.chunk.js.map",
+    "runtime-main.js": "/react-pizza-market/static/js/runtime-main.f5ca45b2.js",
+    "runtime-main.js.map": "/react-pizza-market/static/js/runtime-main.f5ca45b2.js.map",
+    "static/js/2.783717a7.chunk.js": "/react-pizza-market/static/js/2.783717a7.chunk.js",
+    "static/js/2.783717a7.chunk.js.map": "/react-pizza-market/static/js/2.783717a7.chunk.js.map",
+    "index.html": "/react-pizza-market/index.html",
+    "precache-manifest.200cfbaa59d960b6c1a5bfce7dbcb1b8.js": "/react-pizza-market/precache-manifest.200cfbaa59d960b6c1a5bfce7dbcb1b8.js",
+    "service-worker.js": "/react-pizza-market/service-worker.js",
+    "static/css/main.44040635.chunk.css.map": "/react-pizza-market/static/css/main.44040635.chunk.css.map",
+    "static/js/2.783717a7.chunk.js.LICENSE.txt": "/react-pizza-market/static/js/2.783717a7.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/react-pizza-market/static/media/ProximaNova-Regular.b7c51278.eot",
+    "static/media/pizza-logo.svg": "/react-pizza-market/static/media/pizza-logo.786b59b7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5ca45b2.js",
+    "static/js/2.783717a7.chunk.js",
+    "static/css/main.44040635.chunk.css",
+    "static/js/main.11107477.chunk.js"
+  ]
+}

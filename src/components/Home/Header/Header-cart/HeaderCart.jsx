@@ -1,10 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-import {useSelector} from "react-redux";
+import { Link } from 'react-router-dom'
+import { useSelector } from "react-redux";
 
 function HeaderCart() {
 
-    const {totalPrice, totalCount} = useSelector(({cartReducer})=>{
+    const { totalPrice, totalCount } = useSelector(({ cartReducer }) => {
         return {
             totalPrice: cartReducer.totalPrice,
             totalCount: cartReducer.totalCount,
@@ -12,7 +12,7 @@ function HeaderCart() {
     })
 
     return (
-        <Link to='/cart' className="button button--cart">
+        <Link to='react-pizza-market/cart' className="button button--cart">
             <span>{totalPrice} ₽</span>
             <div className="button__delimiter"></div>
             <svg

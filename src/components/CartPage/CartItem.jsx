@@ -3,7 +3,6 @@ import React from 'react';
 function CartItem({imageUrl, name, size, type, price}) {
 
     let availableTypes = ['тонкое', 'традиционное'];
-
     return (
         <div className="cart__item">
             <div className="cart__item-img">

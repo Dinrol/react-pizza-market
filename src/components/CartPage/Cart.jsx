@@ -5,11 +5,13 @@ import {useSelector} from "react-redux";
 
 function Cart() {
     const {pizzasCart, totalPrice, totalCount} = useSelector(({cartReducer}) => cartReducer);
-
-    const addedPizzas = Object.keys(pizzasCart).map(key => {
-        return pizzasCart[key][0]
+    const addedPizzas = Object.keys(pizzasCart).flatMap(key => {
+        let pizzaBlock = []
+        for (let i = 0; i < pizzasCart[key].length; i++){
+            pizzaBlock.push(pizzasCart[key][i])
+        }
+        return pizzaBlock
     })
-
     return (
         <div className="content">
             <div className="container container--cart">

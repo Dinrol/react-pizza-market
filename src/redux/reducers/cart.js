@@ -9,10 +9,9 @@ const cart = (state = initialState, action) => {
         case 'ADD_PIZZA_CART':
             let newPizzasCart = {
                 ...state.pizzasCart,
-                [action.payload]: !state.pizzasCart[action.payload.id]
+                [action.payload.id]: !state.pizzasCart[action.payload.id]
                     ? [action.payload]
                     : [...state.pizzasCart[action.payload.id], action.payload]
-
             }
             // const pizzasList = [].concat.apply([], Object.values(newPizzasCart))
             // const totalPrice = pizzasList.reduce((sum, obj)=>(obj.price+sum), 0)

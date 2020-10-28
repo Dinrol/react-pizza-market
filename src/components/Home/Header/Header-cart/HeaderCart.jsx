@@ -12,7 +12,7 @@ function HeaderCart() {
     })
 
     return (
-        <Link to='react-pizza-market/cart' className="button button--cart">
+        <Link to='/react-pizza-market/cart' className="button button--cart">
             <span>{totalPrice} ₽</span>
             <div className="button__delimiter"></div>
             <svg

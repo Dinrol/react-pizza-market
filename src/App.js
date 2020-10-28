@@ -10,7 +10,7 @@ const App = () => {
     return (
         <div className="wrapper">
             <Header />
-            <Route exact path='/react-pizza-market' component={Home} />
+            <Route exact path='/react-pizza-market/' component={Home} />
             <Route exact path='/react-pizza-market/cart' component={Cart} />
         </div>
     )

@@ -1,8 +1,8 @@
-@import 'fonts';
-@import 'variables';
-@import 'libs/normalize';
+@import "fonts";
+@import "variables";
+@import "libs/normalize";
 
-@import 'components/all';
+@import "components/all";
 
 body {
   background-color: $background;
@@ -16,10 +16,16 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   max-width: 1400px;
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
 }
 
 .content {
   padding: 40px 0;
+  @media screen and (max-width: 425px) {
+    padding-top: 20px;
+  }
 
   &__title {
     margin: 35px 0;
@@ -28,12 +34,15 @@ body {
   &__items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   &__top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
 }
 
@@ -44,6 +53,9 @@ body {
   &--cart {
     max-width: 820px;
     margin: 90px auto;
+    @media screen and (max-width: 992px) {
+      margin: 0 auto;
+    }
     .content__title {
       margin: 0;
     }
@@ -55,12 +67,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 525px) {
+      flex-direction: column;
+    }
   }
 
   .content__title {
     display: flex;
     align-items: center;
     font-size: 32px;
+    @media screen and (max-width: 425px) {
+      font-size: 24px;
+    }
 
     svg {
       position: relative;
@@ -112,12 +130,23 @@ body {
     border-top: 1px solid $gray-line;
     padding-top: 30px;
     margin-top: 30px;
+    @media screen and (max-width: 768px) {
+      padding-top: 15px;
+      margin-top: 15px;
+      justify-content: inherit;
+    }
+    @media screen and (max-width: 525px) {
+      justify-content: space-between;
+    }
 
     &-img {
       display: flex;
       align-items: center;
       margin-right: 15px;
       width: 10%;
+      @media screen and (max-width: 568px) {
+        display: none;
+      }
 
       img {
         width: 80px;
@@ -130,6 +159,9 @@ body {
       flex-direction: column;
       justify-content: center;
       width: 40%;
+      @media screen and (max-width: 768px) {
+        width: 36%;
+      }
 
       h3 {
         font-weight: bold;
@@ -148,7 +180,11 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 13%;
+      width: 17%;
+      @media screen and (max-width: 525px) {
+        flex-direction: column;
+        width: 10%;
+      }
 
       &-minus {
         svg {
@@ -168,6 +204,9 @@ body {
       align-items: center;
       justify-content: center;
       width: 33%;
+      @media screen and (max-width: 768px) {
+        width: 23%;
+      }
 
       b {
         font-weight: bold;
@@ -215,10 +254,16 @@ body {
     &-details {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       span {
         font-size: 22px;
-
+        br {
+          display: none;
+          @media screen and (max-width: 768px) {
+            display: initial;
+          }
+        }
         &:last-of-type {
           b {
             color: $orange;

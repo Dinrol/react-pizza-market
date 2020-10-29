@@ -1,20 +1,33 @@
-@import '../variables';
+@import "../variables";
 
 .header {
   border-bottom: 1px solid $gray-line;
   padding: 40px 0;
+  @media screen and (max-width: 425px) {
+    padding-bottom: 20px;
+  }
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 425px) {
+      display: block;
+    }
   }
 
   &__logo {
     display: flex;
+    @media screen and (max-width: 425px) {
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
     img {
       margin-right: 15px;
+      @media screen and (max-width: 325px) {
+        margin: 0;
+      }
     }
 
     h1 {
